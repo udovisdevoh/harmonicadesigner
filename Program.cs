@@ -10,6 +10,13 @@ namespace HarmonicaDesigner
     {
         static void Main(string[] args)
         {
+            Evaluator evaluator = new Evaluator();
+            evaluator.AddRule(new int[] { 0, 4, 7}, 12);
+            evaluator.AddRule(new int[] { 0, 3, 7 }, 1);
+
+            Generator generator = new Generator(2, 12, evaluator);
+
+            Layout[] layouts = generator.GetBestLayoutsSorted();
         }
     }
 }
