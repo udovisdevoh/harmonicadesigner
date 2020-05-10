@@ -16,5 +16,11 @@ namespace HarmonicaDesigner
         {
             rules[intervals] = weight;
         }
+
+        public int GetScore(Layout layout)
+        {
+            #warning Implement
+            throw new NotImplementedException();
+        }
     }
 }

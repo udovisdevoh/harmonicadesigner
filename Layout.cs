@@ -24,5 +24,11 @@ namespace HarmonicaDesigner
             this.values = new int[rowCount, rowSize];
         }
         #endregion
+
+        public override string ToString()
+        {
+            #warning Implement
+            throw new NotImplementedException();
+        }
     }
 }
