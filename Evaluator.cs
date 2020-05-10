@@ -19,6 +19,21 @@ namespace HarmonicaDesigner
 
         public int GetScore(Layout layout)
         {
+            int score = 0;
+            foreach (KeyValuePair<int[], int> ruleAndWeight in this.rules)
+            {
+                int[] rule = ruleAndWeight.Key;
+                int weight = ruleAndWeight.Value;
+                int occurenceCount = this.CountOccurence(layout, rule);
+
+                score += occurenceCount * weight;
+            }
+
+            return score;
+        }
+
+        private int CountOccurence(Layout layout, int[] rule)
+        {
             #warning Implement
             throw new NotImplementedException();
         }
