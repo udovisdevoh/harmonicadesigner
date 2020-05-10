@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChordType.cs" />
     <Compile Include="Evaluator.cs" />
     <Compile Include="Generator.cs" />
     <Compile Include="Layout.cs" />

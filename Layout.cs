@@ -25,6 +25,23 @@ namespace HarmonicaDesigner
         }
         #endregion
 
+        #region Properties
+        public int RowCount
+        {
+            get { return this.rowCount; }
+        }
+
+        public int RowSize
+        {
+            get { return this.rowSize; }
+        }
+
+        public int this[int rowId, int positionId]
+        {
+            get { return this.values[rowId, positionId]; }
+        }
+        #endregion
+
         public override string ToString()
         {
             StringBuilder layoutDescription = new StringBuilder();
